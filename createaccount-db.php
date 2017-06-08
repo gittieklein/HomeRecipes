@@ -58,7 +58,8 @@
             //if an account was successfully made then go to the home page
             if ($valid)
             {
-                 $_SESSION['WelcomeUser'] = '<div style="color:#a91f23; text-align:right; font-family:Calibri; font-size:20px; ">Welcome ' . ucwords($first) . '!</div>';
+            	$_SESSION['LoggedIn'] = TRUE;
+                $_SESSION['WelcomeUser'] = '<div style="color:#a91f23; text-align:right; font-family:Calibri; font-size:20px; ">Welcome ' . ucwords($first) . '!</div>';
                 header("Location: index.php");
             }
         ?>

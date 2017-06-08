@@ -51,7 +51,7 @@
 							<a href="Desserts.php">Desserts</a>
 						</li>
 						<li>
-							<a href="Submit.php">+Recipe</a>
+							<a href="add_recipe.php">+Recipe</a>
 						</li>
 					</ul>
 				</div>
