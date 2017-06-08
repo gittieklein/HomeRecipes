@@ -1,0 +1,19 @@
+.course-image{ 
+	width: 100%;
+    height: 250px;
+    object-fit: cover; 
+}
+
+/*the styling of all the texts for the recipe categories*/
+.course-text{
+    text-decoration: none;
+    font-family: Calibri;
+    color: #a91f23;
+    font-size: 115px;
+    margin-top: 60px;
+}
+
+.grid-no-space [class*='col-']{
+	padding-right:0;
+    padding-left:0;
+}

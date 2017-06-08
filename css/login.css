@@ -1,0 +1,22 @@
+.input-margin{
+	margin-top: 3px;
+}
+
+.buttom-margin{
+	margin-top: 8px
+}
+
+.middle-line{
+	border-left-style: solid;
+	border-left-width: 1px; 
+}
+
+.title{
+	text-align: center;
+	font-family: Calibri;
+}
+
+.error-message{
+	color: red;
+	 text-align: center;
+}

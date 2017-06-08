@@ -1,0 +1,64 @@
+#logo img {
+	height: 150px;
+	width: auto;
+}
+
+#horizontal-list {
+	height: 40px;
+	border-top: solid #a91f23 3px;
+	border-bottom: solid #a91f23 3px;
+	font-weight: bold;
+}
+
+#horizontal-list li {
+	font-size: 23px;
+	display: inline; /*to create a horizontal menu*/
+	/*padding-top: 20px;
+	padding-right: 61px;*/
+	font-family: Calibri;
+	
+	display:block;
+    float:left;
+    width: 16%;
+}
+
+#horizontal-list li a {
+	text-decoration: none; /*do not underline the links*/
+	color: #663300;
+	
+	display:block;
+    text-align: center;
+}
+
+/*styling for when hovering over a link*/
+#horizontal-list li a:hover {
+	color: #a91f23;
+}
+
+#login{
+	font-size: 23px;
+	padding-top: 7px;
+	font-family: Calibri;		
+}
+
+#login a{
+	text-decoration: none; 
+	color: #663300;
+}
+
+#login a:hover{
+	color: #a91f23;
+}
+
+#search{
+	height: 40px;
+	margin-bottom:20px;
+}
+
+*{
+    background-color: #F5F5F5; 
+}
+
+#space{
+	height: 40px;
+}

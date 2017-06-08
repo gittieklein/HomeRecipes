@@ -1,0 +1,39 @@
+.footer{
+    height: fit-content;
+    font-family: Calibri;
+    float: bottom;
+    margin-top: 70px;
+    border-top: #a91f23;
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+.footer ul li{
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+}
+
+.footer a:link{
+   color: #663300;
+   text-decoration: none;
+}
+
+.footer a:visited{
+   color: #663300;
+   text-decoration: none;
+}
+
+.footer a:hover{
+    color: #a91f23;
+    text-decoration: none;
+}
+
+.footer p{
+    text-align: right;
+    color: #663300;
+    font-family: Calibri;
+    font-weight: bold; 
+}
