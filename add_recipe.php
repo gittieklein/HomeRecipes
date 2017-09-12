@@ -22,10 +22,7 @@
 	            
 	            <form action="addrecipe-db.php" method="POST">
 	                
-	                <div class="form-group col-md-10 col-md-offset-1">
-				      	<label>Recipe Title:</label>
-				      	<input type="text" class="form-control" required/>
-				    </div>
+	                
 	                
 	                <div class="form-group col-md-2 col-md-offset-1">
 				      	<label>Category:</label>			      					    	             
@@ -55,21 +52,12 @@
 		                ?>
 	            	</div>
 				    
-				    <div class="form-group col-md-2">
-					    <label>Prep Time:</label>
-					    <div class="input-group">				    	
-					    	<input type="text" class="form-control">
-	    					<span class="input-group-addon">min.</span> 					
-	  					</div>
-  					</div>
+				    <div class="form-group col-md-10 col-md-offset-1">
+				      	<label>Recipe Title:</label>
+				      	<input type="text" class="form-control" required/>
+				    </div>
 				    
-	              	<div class="form-group col-md-2">
-					    <label>Cook Time:</label>
-					    <div class="input-group">				    	
-					    	<input type="text" class="form-control">
-	    					<span class="input-group-addon">min.</span> 					
-	  					</div>
-  					</div>	
+				    
 	  				
 	  				<div class="form-group col-md-2 col-md-offset-1">
 				      	<label>Amount:</label>		     			      					    	             
@@ -106,7 +94,7 @@
 		           
 		                   //select options from the database
 		                   echo '<select class="form-control">'; 
-		                   echo '<option selected disabled hidden>Select Measurement</option>';
+		                   echo '<option selected disabled hidden>Select</option>';
 		                   while ($dbrow = mysqli_fetch_assoc($dbresult))
                            {
                                echo "<option>$dbrow[measurement]</option>";
@@ -117,15 +105,23 @@
 		                
 	                <div class="col-md-4">
 	                	<label>Ingredient:</label>		
-	                	<input type="text" class="form-control" placeholder="Ingredient"/>
+	                	<input type="text" class="form-control"/>
 	                </div>
-		            
+				    
+	              	<div class="form-group col-md-2">
+					    <label>Cook Time:</label>
+					    <div class="input-group">				    	
+					    	<input type="text" class="form-control">
+	    					<span class="input-group-addon">min.</span> 					
+	  					</div>
+  					</div>	
+  					
 	                <div class="form-group col-md-8 col-md-offset-2">
 				      	<label>Directions:</label>
 				      	<textarea class="form-control" rows="12" cols="50" placeholder="Type the instructions here, each on its own line." name="instructions" required></textarea>
 	                </div>
 	            	
-	            	<div class="form-group col-md-8 col-md-offset-2">
+	            	<div class="form-group col-md-4 col-md-offset-4">
 	                	<input class="form-control btn" type="SUBMIT" name="button" value="Submit">
 	                </div> 
 	            </form>
